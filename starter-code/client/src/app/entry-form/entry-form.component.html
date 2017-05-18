@@ -1,0 +1,15 @@
+<p>
+  EEIEIEIEI form
+</p>
+
+<form (ngSubmit)="submitForm(myForm)" >
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" class="form-control" name="title" [(ngModel)]="newEntry.title" required>
+  </div>
+  <div class="form-group">
+    <label for="content">Content</label>
+    <input type="text" class="form-control" name="content" [(ngModel)]="newEntry.content" required>
+  </div>
+  <button (click)="addEntry()" class="btn btn-success">Submit</button>
+</form>

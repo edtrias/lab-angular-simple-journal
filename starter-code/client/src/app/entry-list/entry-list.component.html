@@ -1,0 +1,11 @@
+<p>
+  entry-list works!
+</p>
+
+<ul *ngFor= 'let entry of entries' >
+  <li>{{entry.title}}</li>
+  <li>{{entry.date}}</li>
+  <a [routerLink]="['/journal-entries', entry._id]">Show Single</a>
+</ul>
+
+<app-entry-form></app-entry-form>
